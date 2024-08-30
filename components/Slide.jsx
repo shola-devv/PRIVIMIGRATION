@@ -9,6 +9,8 @@ return (
     <>
     <div>
    <Image></Image>
+   <Image></Image>
+ <p>this image part should cover some detail as to how we intend to work</p>
     {userName}
     <p>friends</p>
         </div>
