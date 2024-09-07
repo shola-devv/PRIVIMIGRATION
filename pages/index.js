@@ -5,8 +5,8 @@ import { useRef } from 'react';
  const Page = ()=>{
   //baba call useref later o
   let mr = useRef()
-   let subheading1 = <h1 className='firsty'>Immigrate without hassle by posting</h1>
-   let subheading2 = <h2 className='secondy'>Get immigration help, speed up your travels.</h2>
+   let subheading1 = <h1 className='firsty'>Share your immigration plans </h1>
+   let subheading2 = <h2 className='secondy'>share plans,get immigration help, speed up your travels.</h2>
     return (
       <>
 <div className='all'>

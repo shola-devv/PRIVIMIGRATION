@@ -19,12 +19,18 @@
 }
 .firsty{
  font-size: 50px;
- font-weight: 300
+ font-weight: 300;
+ margin-left:170px;
+ margin-top:100px;
+
+
 }
 .secondy{
     font-size: 23px;
     font-weight: 500;
     margin:50px;
+    /* i added */
+    margin-left:230px;
 
 }
 
@@ -66,7 +72,7 @@
     height: 45px;
     width: 220px;
     background-color: rgb(204, 208, 236);
-    margin-left : 700px;
+    margin-left : 420px;
     border: 3px solid rgb(130, 122, 250);
     margin-bottom: 20px;
     font-size: 16px;
@@ -80,10 +86,10 @@
     animation-direction: aternate;
 }
 .butt3{
-    height: 35px;
-    width: 25px;
+    height: 32px;
+    width: 22px;
     background-color: rgb(139, 253, 154);
-   margin-left : -370px;
+   margin-left : -300px;
     border: 3px solid rgb(10, 173, 5);
     margin-bottom: 20px;
     width : 120px;
@@ -93,8 +99,8 @@
     font-weight: 600;
 }
 .butt4{
-    height: 35px;
-    width: 25px;
+    height: 32px;
+    width: 22px;
     margin-left: 10px;
     background-color: rgb(204, 208, 236);
     border: 3px solid rgb(130, 122, 250);

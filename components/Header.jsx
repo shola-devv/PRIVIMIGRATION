@@ -2,7 +2,7 @@ import Hamburger from './Hamburger.jsx'
 import Button from './Button.jsx'
 
 const Header = ()=>{
-    let title = <h1>PRIVIMIGRATION</h1>
+    let title = <h1>privimigration</h1>
     return( 
         <div className='div'>
         {title}
