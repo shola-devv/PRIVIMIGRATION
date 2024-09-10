@@ -1,13 +1,12 @@
 import styles from '../styles/about.module.css'
 import { useSelector } from "react-redux";
-import Navbar from '../comps/navbar.js';
+import Navbar from '../components/navbar.js';
 import Link from 'next/link';
 
 // <Navbar />
 export default function  About(){
 
-    const user = useSelector((state) => state.user.value)
-    return(
+ return(
         
         <div className={styles.body}>
            

@@ -10,27 +10,29 @@
     }
   html{
    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color : rgb(11, 196, 57);
+   color:black;
   font-family: Arial, Helvetica, sans-serif;
    display: flex;
    justify-content: center;
-   background-color:  rgba(230, 243, 233, 0.849);  
+   background-color:  rgba(253, 255, 253, 0.849);  
 
 }
 .firsty{
+    position: relative;
  font-size: 50px;
- font-weight: 300;
- margin-left:170px;
- margin-top:100px;
+ font-weight: 600;
+ margin-left: 18rem;
+ margin-top: -2rem;
+ z-index:8;
 
 
 }
 .secondy{
     font-size: 23px;
-    font-weight: 500;
-    margin:50px;
+    font-weight: 700;
+    margin: 2rem;
     /* i added */
-    margin-left:230px;
+    margin-left: 21rem;
 
 }
 
@@ -44,19 +46,21 @@
     background-color:   rgba(196, 255, 210, 0.849);
     border: 0px solid rgb(88, 145, 72);
     border-radius: 6px;
+   
 }
 .butt1{
     height: 45px;
     width: 70px;
-    background-color: rgb(139, 253, 154);
+    background-color: rgb(161, 252, 173);
     margin : 20px;
-    border: 3px solid rgb(10, 173, 5);
+    border: 3px solid rgb(133, 247, 129);
     margin-bottom: 20px;
     width : 120px;
     font-size: 16px;
     border-radius: 7px;
     cursor: pointer;
     font-weight: 600;
+    color:black;
    
 }
 .butt1:hover{
@@ -71,9 +75,9 @@
 .butt2{
     height: 45px;
     width: 220px;
-    background-color: rgb(204, 208, 236);
-    margin-left : 420px;
-    border: 3px solid rgb(130, 122, 250);
+    background-color: rgb(217, 221, 253);
+    margin-left : 31rem;
+    border: 3px solid #9d98fc;
     margin-bottom: 20px;
     font-size: 16px;
     border-radius: 7px;
@@ -84,32 +88,35 @@
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-direction: aternate;
+    color:black;
 }
 .butt3{
     height: 32px;
     width: 22px;
-    background-color: rgb(139, 253, 154);
-   margin-left : -300px;
-    border: 3px solid rgb(10, 173, 5);
+    background-color: rgb(140, 255, 155);
+   margin-left : 900px;
+    border: 3px solid rgb(185, 255, 182);
     margin-bottom: 20px;
     width : 120px;
     font-size: 16px;
     border-radius: 7px;
     cursor: pointer;
     font-weight: 600;
+    color:black;
 }
 .butt4{
     height: 32px;
     width: 22px;
     margin-left: 10px;
-    background-color: rgb(204, 208, 236);
-    border: 3px solid rgb(130, 122, 250);
+    background-color: rgb(209, 214, 252);
+    border: 3px solid #bfbcfa;
     margin-bottom: 20px;
     width : 120px;
     font-size: 16px;
     border-radius: 7px;
     cursor: pointer;
     font-weight: 600;
+    color:black;
 }
 
 .butt2:hover{
@@ -140,4 +147,14 @@
 }
 
   
+}
+.globe{
+    margin-left: rem;
+}
+.look{
+    
+    position: absolute;
+margin-left: 57rem;
+margin-top: -16rem;
+z-index:1;
 }

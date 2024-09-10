@@ -1,4 +1,4 @@
-import Hamburger from './Hamburger.jsx'
+//import Hamburger from './Hamburger.jsx' <Hamburger/> 
 import Button from './Button.jsx'
 
 const Header = ()=>{
@@ -6,7 +6,7 @@ const Header = ()=>{
     return( 
         <div className='div'>
         {title}
-        <Hamburger/> 
+        
         <Button style='butt3' name='login'/>
         <Button style='butt4' name='sign up'/>
         </div>
