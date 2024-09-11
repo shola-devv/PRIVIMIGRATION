@@ -16,7 +16,6 @@ export default function  About(){
          <p>&nbsp;&nbsp;&nbsp;Feautures :</p>
             <ol className={styles.boom}>
             <li>- Real time price updates: stay informed about the prices of major cryptocurrencies including Bitcoin, Ethereum, solana, and more</li>
-            <li>- Detailed statistics: dive deep into the performance metrics of each cryptocurrency, including markert capitalization and trading volume.</li>
            <li> - A user-friendly interface: cryptoSnoops user friendly interface makes navigating it a breeze, ensuring a seamless experience for everyone.</li> 
          </ol>
         </div>
