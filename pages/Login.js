@@ -5,28 +5,27 @@ import Navbar from '../components/navbar.js';
 import Link from 'next/link';
 
 // <Navbar />
-export default function  About(){
-
+export default function  Login(){
+ //components/header
+ //pages/Login
+ //pages/index
+ //pages/signup
  return(
         
-        <div className={styles.body}>
+        <div className='{styles.body} overflow-hidden'>
            
-        <h1 className={styles.about}> About the app</h1>
-        <div className={styles.story}>
-         <p>   &nbsp;  &nbsp; cryptoSnoop is your go to platform for staying updated on the dynamic world of cryptos. whether you are a proffesional or just getting started, this webapp offers you valuable insights and data to make informed decisions.   </p>
-         <p>&nbsp;&nbsp;&nbsp;Feautures :</p>
-            <ol className={styles.boom}>
-            <li>- Real time price updates: stay informed about the prices of major cryptocurrencies including Bitcoin, Ethereum, solana, and more</li>
-            <li>- Detailed statistics: dive deep into the performance metrics of each cryptocurrency, including markert capitalization and trading volume.</li>
-           <li> - A user-friendly interface: cryptoSnoops user friendly interface makes navigating it a breeze, ensuring a seamless experience for everyone.</li> 
-         </ol>
-        </div>
+        <div className='bg-slate-200 rounded-xl p-16 '>
+          <h1 className='mx-auto my-auto  sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl  font-bold'>     PRIVIMIGRATION</h1>
+          <h2 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl font-semibold'>LOGIN</h2>
+         <form>
+         <label>Username:</label>
+        <input type='text' className='border-4 border-slate-400 rounded-lg w-80 h-12' ></input><br></br>
+          <label>password:</label>
+          <input type='password' className='border-4 border-slate-400 rounded-lg w-80 h-12 m-8 mx--16' ></input> <br></br>
+          <input type ='submit' value='       LOGIN' className=' border-4 border-blue-400 cursor-pointer bg-blue-200 rounded-md h-12 w-32 m-6'></input>
 
-
-        <h1 className={styles.about}> About the developer</h1>
-       <div className={styles.story}>
-        <p>&nbsp;  &nbsp; Hi there! im  Emmanuel Olushola Fayinminu. With a passion for technology and a keen intrest in the world of cryptos, i embarked on a journey to develop a app that provides users with real-time updates and comprehensive statistics on major cryptocurrencies. </p>
-        <p>&nbsp;&nbsp;Reach out to me <Link className='text-blue-500' href='https://x.com/OlusholaEmanuel'>here</Link>.</p>
+         </form>
+         <h1> dont have an account yet? <Link className='text-blue-700'href='/Login'>SignUp</Link></h1>
         </div>
         </div>
     )
