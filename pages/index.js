@@ -2,7 +2,7 @@ import Button from '../components/Button.jsx'
 import Header from '../components/Header.jsx' 
 import { useRef } from 'react';
 import Image from "next/image";
-
+import Link from 'next/link.js';
 
 
  const Page = ()=>{
@@ -20,7 +20,7 @@ import Image from "next/image";
       {subheading2}
  
  
-<Button name='sign up' style='butt2'/>
+<Link href='/Signup'><Button name='sign up' style='butt2'/></Link>
 
 <div className='look'>
 <Image src="../WorldLook.svg"
