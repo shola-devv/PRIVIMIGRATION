@@ -2,7 +2,7 @@ import Link from "next/link"
 
 
 
-export default notFound = ()=>{
+const  notFound = () => {
 
 return(
 <>
@@ -14,3 +14,4 @@ return(
 )
 
 }
+export default  notFound
