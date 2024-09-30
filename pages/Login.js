@@ -6,10 +6,7 @@ import Link from 'next/link';
 
 // <Navbar />
 export default function  Login(){
- //components/header
- //pages/Login
- //pages/index
- //pages/signup
+ 
  return(
         
         <div className='{styles.body} overflow-hidden'>
