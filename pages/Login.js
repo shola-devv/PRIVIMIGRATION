@@ -24,6 +24,5 @@ export default function  Login(){
          </form>
          <h1> dont have an account yet? <Link className='text-blue-700'href='/Login'>SignUp</Link></h1>
         </div>
-        </div>
-    )
-}
+       </div>
+        )}
