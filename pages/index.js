@@ -16,7 +16,7 @@ import Link from 'next/link.js';
           <div className='all'>
      
 
-    <divclass my-auto mx-auto>{subheading1}</div>  
+    <div className=' my-auto mx-auto'>{subheading1}</div>  
       {subheading2}
  
  
