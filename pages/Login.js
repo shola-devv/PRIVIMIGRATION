@@ -11,7 +11,7 @@ export default function  Login(){
         
         <div className='{styles.body} overflow-hidden'>
            
-        <div className='bg-slate-200 rounded-xl p-20 sm:p-6 md:p-10 xl:20px'>
+        <div className='bg-slate-200 rounded-xl p-20 sm:p-6 md:p-10 xl:20'>
           <h1 className='mx-auto my-auto  sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl  font-bold'>     PRIVIMIGRATION</h1>
           <h2 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl font-semibold'>LOGIN</h2>
          <form>
