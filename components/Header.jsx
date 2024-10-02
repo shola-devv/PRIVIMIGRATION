@@ -6,6 +6,7 @@ import Link from 'next/link.js'
 const Header = ()=>{
     let title = <h1 className='small'>privimigration</h1>
     return( 
+        <div className='flex justify-center items-center'>
         <div className='div'>
             <div >
       <Image src="../worldGlobe.svg"
@@ -18,6 +19,7 @@ const Header = ()=>{
         
        <Link href='/Login'><Button style='butt3' name='login'/></Link> 
        <Link href='/Signup'><Button style='butt4' name='sign up'/></Link> 
+        </div>
         </div>
     )
 }
