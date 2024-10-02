@@ -16,13 +16,13 @@ import Link from 'next/link.js';
           <div className='all'>
      
 
-    <div className=' flex items-center justify-center'>{subheading1}</div>  
-    <div className=' flex items-center justify-center m-16 z-0'>{subheading2}</div>  
+    <div className=' flex items-center justify-center font-mono'>{subheading1}</div>  
+    <div className=' flex items-center justify-center m-16 z-20'>{subheading2}</div>  
     
  
 <div className='my-20'><Link href='/Signup'><Button name='sign up' style='butt2' /></Link></div>
 
-<div className='look z-30'>
+<div className='look pt-8'>
 <Image src="../WorldLook.svg"
               alt="Vercel Logo"
               width={400}
