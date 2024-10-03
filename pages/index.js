@@ -8,8 +8,8 @@ import Link from 'next/link.js';
  const Page = ()=>{
   //baba call useref later o
   let mr = useRef()
-  let subheading1 = <h1 className='text-6xl font-bold '>Share your immigration plans </h1>
-   let subheading2 = <h2 className='text-2xl font-bold'>share plans,get immigration help, speed up your travels.</h2>
+  let subheading1 = <h1 className='text-6xl font-thin'><span className='text-blue-400'>Share</span><span className='text-blue-400'> your </span><span className='text-lime-400'>immigration</span> <span className='text-blue-400'>plans</span> </h1>
+   let subheading2 = <h2 className='text-2xl font-bold font-mono'>Share plans, Get immigration help, Speed up your travels.</h2>
     return (
       <>
         <Header/>
