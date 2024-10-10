@@ -5,25 +5,24 @@ import Link from 'next/link.js'
 
 const Header = ()=>{
     let title = <h1 className='text-xl  md:text-2xl font-bold text-blue-400 font-mono'>privimigration</h1>
-    
+    let name = <h1 className='font-bold'>PRIVIMIGRATION</h1>
+
     return( 
-        <div className='flex flex-col md:flex-row justify-between items-center py-2 px-6 md:px-6 bg-white shadow-blue-300 shadow-md rounded-lg'>
-        <div className='flex items-center mb-4 md:mb-0'>
+        <div className="p-6 relative font-mono">
             
-        <div className='flex items-center '>
-            
+            <div id='header' className='flex  shadow-blue-300 shadow-md ml-16 rounded-md'>
+            <div>
+            <img src='../mypic.png'
+             className=" w-10 lg:w-[30vw] md:w-[38vw] "
+            />
+            </div>
 
+            <div className='pl-4 py-2  text-bold lg:text-xl text-blue-400' >{name}</div>
             
-                    <div className='ml-3 md:ml- 20'> {title}</div>
-                   
-                    </div>
-
-              <div className='flex space-x-2'>
-       <Link href='/Login'><Button style='butt3' name='login'/></Link> 
-       <Link href='/Signup'><Button style='butt4' name='sign up'/></Link> 
-        </div>
-        </div>
-        </div>
+  
+   </div>
+   </div>         
+        
     )
 }
 export default Header

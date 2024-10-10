@@ -1,14 +1,14 @@
-
 import Image from "next/image"
-  
-   export default settings = ()=>{
+import Header from '../components/Header.jsx'
+
+
+   const settings = ()=>{
 
 return(
 
-<>
-<h1>
+<div>
 
-</h1>
+<Header />
 
 <div>
 <ol>
@@ -24,8 +24,12 @@ return(
 </ol>
 
 </div>
-</>
+
+
+</div>
 
 )
 
   }
+
+  export default settings

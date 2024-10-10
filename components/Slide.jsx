@@ -8,11 +8,11 @@ const Slide = ()=>{
 
 return (
     
-    <div className="bg-slate-600">
+    <div className="bg-slate-600 w-56 p-4  -ml-14 h-96">
 
-  <div> 
-  <h1>Profile</h1>
+  <div className='flex'> 
 <p>add an image tag here</p>
+<h1>Profile</h1>
  <p> userName</p>
  </div>
 

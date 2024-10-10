@@ -1,33 +1,57 @@
+import Link from "next/link";
 
-import styles from '../styles/about.module.css'
-import { useSelector } from "react-redux";
-import Navbar from '../components/navbar.js';
-import Link from 'next/link';
 
-// <Navbar />
-export default function  Login(){
- 
- return(
-        
-  <div className='mt-12'>
-           
-  <div className='mx-auto my-auto bg-slate-200 rounded-xl p-20 sm:p-6 md:p-10 xl:20px'>
-    <h1 className='flex justify-center  sm:text-lg md:text-xl lg:text-2xl p-8 xl:text-3xl 2xl:text-3xl  font-bold p-4'>     PRIVIMIGRATION</h1>
-    <h2 className=' flex justify-center  sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl font-semibold p-4'>LOGIN</h2>
-   <form>
-   <div className='py-4'>
-  <label className='pr-6'>password:</label>
-  <input type='text' className='border-4 border-slate-400 rounded-lg w-80 h-12 ' ></input><br></br>
-  </div>
+ const Login =()=>{
 
+
+
+return(
+
+  <div className='px-10 py-16 md:m-20 xl:mx-96 font-mono'>
+   <div>
+   <h1 className='flex justify-center  sm:text-lg md:text-xl lg:text-2xl  xl:text-3xl 2xl:text-3xl  font-semibold p-4 text-blue-400 font-mono '>PRIVIMIGRATION</h1>
+   <h2 className=' flex justify-center  sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl font-semibold p-4  text-blue-400 font-mono'>LOGIN</h2>
+   </div>
+  <div className='flex justify-center w-76  h-80 bg-blue-100 rounded-xl'>
+  
+  <form>
+
+<div className='pb-4 pt-4 px-4'>
+<div className='py-4'>
+<label className=' font-semibold'>  Email:</label>
+</div>
+<input type='text' className='border-4  border-slate-300 rounded-lg w-64 h-12 ' ></input><br></br>
+</div>
+
+<div className='pb-4 pl-4'>
   <div className='py-4'>
-  <label className='pr-6'>username:</label>
-  <input type='password' className='border-4 border-slate-400 rounded-lg w-80 h-12 ' ></input><br></br>
+    <label className=' font-semibold'>Password:</label>
   </div>
 
- <div className='flex justify-center'>  <input type ='submit' value='LOGIN' className=' border-4 border-blue-400 cursor-pointer bg-blue-200 rounded-md h-12 w-32 m-6 font-bold'></input></div>
-   </form>
-   <h1 className='flex justify-center'> already have an account?  <Link className='text-blue-700'href='/Login'>   sgnup</Link></h1>
+<input type='password' className=' border-4  border-slate-300 rounded-lg w-64 h-12 ' ></input><br></br>
+</div>
+
+
+<div className='flex justify-center'>  <input type ='submit' value='LOGIN' className=' relative border-4 bg-blue-200 border-blue-400 rounded-md w-20 h-8 m-2 cursor-pointer' ></input></div>
+</form>
+
+   </div>
+   <p><Link href='/' className="text-blue-600">forgot password?</Link></p>
+   <h2>Dont have an account? <Link href='/' className="text-blue-600">Signup</Link></h2>
+   <div className='flex justify-center pt-40 lg:pt-4 lg:-mb-third'>
+<img
+src="../WorldGlobe.svg"
+alt="oh, my bird"
+className="lg:w-[36vw] md:w-[32vw] sm:w-56"
+/>
+</div>
   </div>
- </div>
-        )}
+
+
+
+)
+
+
+ }
+
+ export default Login

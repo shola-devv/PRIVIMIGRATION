@@ -22,6 +22,10 @@ module.exports = {
         'curved': '2rem',
         },
       },
+      margin:{
+        "50rem":'50rem',
+        "25rem":'25rem',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
