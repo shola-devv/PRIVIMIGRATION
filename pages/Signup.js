@@ -1,32 +1,117 @@
-import styles from '../styles/about.module.css'
-import { useSelector } from "react-redux";
-import Navbar from '../components/navbar.js';
-import Link from 'next/link';
+import Link from "next/link";
+import axios from 'axios'
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 
-// <Navbar />
-export default function  Login(){
+
+
+
+ const Signup =()=>{
+
+     
+
+     const schema = yup.object().shape({
+      username: yup.string().required('username is required'),
+      email:yup.string().email('invalid email').required('Email is required'),
+      password: yup.string().required('password is required')
+  })
+
+  const {  register, handleSubmit, formState:{errors},} = useForm({resolver:yupResolver(schema)});
+
+
+  const onSubmit = async(data)=>{
+    console.log(data)
+    
+        const {id, password} = data;
+        try {
+    
+            const response = await axios.post('URL/comments', 
+                {
+                 id,
+                 password
+                }
+            
+            );
+            console.log(response)
+            localStorage.setItem('token', response.token);
+                   
+                   
+            if (response.ok){
+            //to success/ message page
+            navigate('/fetch');
+            } else {
+            console.error('failed to submit comment');
+            }
+        }
+            catch (error){ console.error('Error:', error)} 
  
- return(
+ 
         
-        <div className='mt-12'>
-           
-        <div className='mx-auto my-auto bg-slate-200 rounded-xl p-20 sm:p-6 md:p-10 xl:20px'>
-          <h1 className='flex justify-center  sm:text-lg md:text-xl lg:text-2xl p-8 xl:text-3xl 2xl:text-3xl  font-bold p-4'>     PRIVIMIGRATION</h1>
-          <h2 className=' flex justify-center  sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl font-semibold p-4'>SignUp</h2>
-         <form>
-         <div className='py-4'>
-        <label className='pr-6'>password:</label>
-        <input type='text' className='border-4 border-slate-400 rounded-lg w-80 h-12 ' ></input><br></br>
-        </div>
+    }
 
-        <div className='py-4'>
-        <label className='pr-6'>username:</label>
-        <input type='password' className='border-4 border-slate-400 rounded-lg w-80 h-12 ' ></input><br></br>
-        </div>
 
-       <div className='flex justify-center'>  <input type ='submit' value='SIGNUP' className=' border-4 border-blue-400 cursor-pointer bg-blue-200 rounded-md h-12 w-32 m-6 font-bold'></input></div>
-         </form>
-         <h1 className='flex justify-center'> already have an account?  <Link className='text-blue-700'href='/Login'>   login</Link></h1>
-        </div>
-       </div>
-        )}
+
+
+
+
+
+return(
+
+  <div className='px-10 py-16 md:m-20 xl:mx-96 '>
+   <div>
+   <h1 className='flex justify-center  sm:text-lg md:text-xl lg:text-2xl  xl:text-3xl 2xl:text-3xl  font-semibold p-4 font-mono'>     PRIVIMIGRATION</h1>
+   <h2 className=' flex justify-center  sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl font-semibold p-4 font-mono'>SIGNUP</h2>
+   </div>
+  <div className='flex justify-center w-76  h-120 bg-pink-100 rounded-xl'>
+  
+  <form onSubmit={handleSubmit(onSubmit)}>
+
+  <div className='pb-2 pt-2'>
+<div className='py-4'>
+<label className=' font-semibold'>username:</label>
+</div>
+<input type='text' className='border-4  border-pink-300 rounded-lg w-64 h-12 ' {...register('email')}></input><br></br>
+{errors.username && <div className='text-black text-sm'>{errors.username.message}</div>}
+</div>
+
+<div className='pb-2 pt-2'>
+<div className='py-4'>
+<label className=' font-semibold'>email:</label>
+</div>
+<input type='text' className='border-4  border-pink-300 rounded-lg w-64 h-12 ' {...register('email')}></input><br></br>
+{errors.email && <div className='text-black text-sm'>{errors.email.message}</div>}
+</div>
+
+<div className='pb-2'>
+  <div className='py-4'>
+    <label className=' font-semibold'>password:</label>
+  </div>
+
+<input type='password' className=' border-4  border-pink-300 rounded-lg w-64 h-12 ' {...register('password')}></input><br></br>
+{errors.password && <div className='text-black text-sm'>{errors.password.message}</div>}
+</div>
+
+
+<div className='flex justify-center pb-2'>  <input type ='submit' value='SIGNUP' className=' relative border-4 bg-pink-200 border-pink-400 rounded-md w-20 h-8 m-2  cursor-pointer' ></input></div>
+</form>
+
+   </div>
+      <h2 className="pt-4 pb-0">Already have an account? <Link href='/Login' className="text-blue-600">Login</Link></h2>
+   <div className='flex justify-center pt-10 lg:pt-4 lg:-mb-third'>
+<img
+src="../bird.svg"
+alt="oh, my bird"
+className="lg:w-[36vw] md:w-[32vw] sm:w-56"
+/>
+</div>
+  </div>
+
+
+
+)
+
+
+ }
+
+ export default Signup
