@@ -1,4 +1,4 @@
-import Slide from "/components/Slider"
+import Slide from 'components/slider.js'
 import axios from 'axios'
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';

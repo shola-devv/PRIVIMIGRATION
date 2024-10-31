@@ -1,4 +1,4 @@
-import Slide from "/components/Slider.js"
+/*
 import { faCoffee, faHeart, faHomeAlt, faKiwiBird, faPencilSquare, faSearch, faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser as faUserThin } from '@fortawesome/free-solid-svg-icons'
@@ -70,3 +70,4 @@ return(
 }
 
  export default Home
+ */
