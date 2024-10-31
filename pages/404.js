@@ -10,7 +10,7 @@ import Head from "next/head"
 useEffect(()=>{
 setTimeout(()=>{
 route.push('/')
-}, 14333000)
+}, 12000)
 }, )
  
 

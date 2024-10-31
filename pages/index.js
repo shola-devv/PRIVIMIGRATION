@@ -13,8 +13,8 @@ return (
     <div id='header' className='flex  shadow-blue-300 shadow-md ml-16 rounded-md'>
    <div className='pl-4 py-2  text-bold lg:text-xl text-blue-400' >{name}</div>
    <div id='buttons' className=' flex '>
-   <div className='relative'><Link href='/Signup'> <button className=' relative border-4 bg-blue-200 border-blue-400 rounded-lg w-20 h-8 ml-32 lg:ml-50rem' >Sign-up</button></Link></div> 
-   <div className='relative'><Link href='/Login'> <button className='border-4 bg-lime-200 border-lime-500 rounded-lg w-20 h-8  ml-4 mr-2 text-white text-bold ' >Log-in</button></Link></div> 
+   <div className='relative'><Link href='/Signup'> <button className=' relative border-4 sm:border-2 bg-blue-200 border-blue-400 rounded-lg w-20 h-8 ml-32 lg:ml-50rem' >Sign-up</button></Link></div> 
+   <div className='relative'><Link href='/Login'> <button className='border-4 sm:border-2 bg-lime-200 border-lime-500 rounded-lg w-20 h-8  ml-4 mr-2 text-white text-bold ' >Log-in</button></Link></div> 
    </div>
     </div>  
 
@@ -31,7 +31,7 @@ className=" w-80 lg:w-[30vw] md:w-[38vw] "
 <div className='  absolute lg:ml-second lg:pb-20 '>
 <div className='pl-4'>{subheading1}</div>
 <div className=''>{subheading2}</div>
-<div className=' pt-4'><Link href='/Signup'> <button className=' relative border-4 bg-lime-200 border-lime-500 rounded-lg w-40 h-10 ml-32 lg:ml-25rem animate-bounce loo' >Sign-up</button></Link></div>
+<div className=' pt-4'><Link href='/Signup'> <button className=' relative border-4 sm:border-2 bg-lime-200 border-lime-500 rounded-lg w-40 h-10 ml-32 lg:ml-25rem animate-bounce loo' >Sign-up</button></Link></div>
 
 </div>
 

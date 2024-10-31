@@ -50,7 +50,7 @@ const onSubmit = async(data)=>{
 
 return(
 
-  <div className='px-10 py-16 md:m-20 xl:mx-96 font-mono'>
+  <div className='px-8 py-2 md:m-20 xl:mx-96 font-mono'>
    <div>
    <h1 className='flex justify-center  sm:text-lg md:text-xl lg:text-2xl  xl:text-3xl 2xl:text-3xl  font-semibold p-4 text-blue-400 font-mono '>PRIVIMIGRATION</h1>
    <h2 className=' flex justify-center  sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl font-semibold p-4  text-blue-400 font-mono'>LOGIN</h2>
@@ -63,7 +63,7 @@ return(
 <div className='py-4'>
 <label className=' font-semibold'>  Email:</label>
 </div>
-<input type='text' className='border-4  border-slate-300 rounded-lg w-64 h-12 ' {...register('email')}></input><br></br>
+<input type='text' className='border-4 sm:border-2 border-slate-300 rounded-lg w-64 h-12 ' {...register('email')}></input><br></br>
 {errors.email && <div className='text-black text-sm'>{errors.email.message}</div>}
 </div>
 
@@ -72,12 +72,12 @@ return(
     <label className=' font-semibold'>Password:</label>
   </div>
 
-<input type='password' className=' border-4  border-slate-300 rounded-lg w-64 h-12 ' {...register('password')}></input><br></br>
+<input type='password' className=' border-4 sm:border-2 border-slate-300 rounded-lg w-64 h-12 ' {...register('password')}></input><br></br>
 {errors.password && <div className='text-black text-sm'>{errors.password.message}</div>}
 </div>
 
 
-<div className='flex justify-center'>  <input type ='submit' value='LOGIN' className=' relative border-4 bg-blue-200 border-blue-400 rounded-md w-20 h-8 m-2 cursor-pointer' ></input></div>
+<div className='flex justify-center'>  <input type ='submit' value='LOGIN' className=' relative border-2 sm:border-2 bg-blue-200 border-blue-400 rounded-md w-20 h-8 m-2 cursor-pointer' ></input></div>
 </form>
 
    </div>

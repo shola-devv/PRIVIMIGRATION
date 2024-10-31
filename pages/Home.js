@@ -89,7 +89,7 @@ return(
     
   <div className='fixed bottom-0 left-0 w-full mb-20 bg-white  flex justify-around '>
    
-  <div className="w-12 h-12 bg-grey-400  rounded-full cursor-pointer"><FontAwesomeIcon icon={faPaperPlaneThin} className="w-16 h-10  text-blue-300" /></div>
+  <div className="w-16 h-16 bg-slate-100  rounded-full cursor-pointer"><FontAwesomeIcon icon={faPaperPlaneThin} className="w-16 h-10  text-blue-300" /></div>
   </div>
     <div className="w-12 h-12  bg-grey-200 cursor-pointer"><FontAwesomeIcon icon={faHomeThin} className="w-16 h-10 text-lime-500" /></div>
     <div className="w-12 h-12 bg-grey-200 cursor-pointer"><FontAwesomeIcon icon={faSearchThin} className="w-16 h-10  text-lime-500" /></div>

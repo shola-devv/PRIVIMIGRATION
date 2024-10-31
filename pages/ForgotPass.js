@@ -9,7 +9,7 @@ import { useRouter } from "next/router"
 
 const ForgotPassword =()=>{
 
-    
+    const route = useRouter();
 
     const schema = yup.object().shape({
      email:yup.string().email('invalid email').required('Email is required'),
@@ -20,7 +20,7 @@ const ForgotPassword =()=>{
 
 
  const onSubmit = async(data)=>{
-    const route = useRouter();
+    
    console.log(data)
    
        const {id, password} = data;
