@@ -57,7 +57,7 @@ return(
     <div className="w-12 h-12 bg-blue-100"> <FontAwesomeIcon icon={faGearThin} /><p>NOTIFICATIONS</p></div>
     <div className="w-12 h-12 bg-blue-100"> <FontAwesomeIcon icon={faArrowLeftThin} /><p>NOTIFICATIONS</p></div>
     <div className="w-12 h-12 bg-blue-100"> <FontAwesomeIcon icon={faPenToSquareThin} /><p>NOTIFICATIONS</p></div>
-    <div className="w-12 h-12 bg-blue-100"> <FontAwesomeIcon icon={faDoveThin} /><p>NOTIFICATIONS</p></div>
+    <div className="w-12 h-12 bg-blue-100"> <FontAwesomeIcon icon={fatra} /><p>NOTIFICATIONS</p></div>
     
      
      </div>

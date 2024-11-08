@@ -36,7 +36,7 @@ const Slide = ()=>{
     </div>
 
     <div
-    className= {` fixed top-0 left-0 h-screen w-64   bg-gray-800 text-white  p-4 transition-transform duration-300  ${
+    className= {` fixed top-0 left-0 h-screen w-64   bg-lime-700 text-white  p-4 transition-transform duration-300  ${
         isOpen ? 'translate-x-0' : '-translate-x-64'
     }`}
 
