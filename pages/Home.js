@@ -1,4 +1,4 @@
-import Slide from '@/components/Slider'
+//import Slide from "@/components/Slider"
 import axios from 'axios'
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -15,6 +15,7 @@ import Posts from "@/components/Posts"
 
 
 /*
+< Slide/>
 <form onSubmit={handleSubmit(onSubmit)}>
   <input type='text'  placeholder='write a journal here' className=' border-4  border-pink-300 rounded-lg w-64 h-12 ' {...register('journal')}></input>
    <input type ='submit' value='save' className=' relative border-2 bg-pink-200 border-pink-400 rounded-md w-20 h-8 m-2 cursor-pointer' ></input>
@@ -77,7 +78,7 @@ return(
 
 
     <div className='fixed top-0 left-0 w-full'>
-      < Slide/>
+      
     </div>
     
   <div className= 'flex-1 overflow-y-auto py-10 mt-16 border-4 bg-grey-200 w-full p-4 mx-6 rounded-lg'> 
