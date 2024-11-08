@@ -93,6 +93,16 @@ return(
 </div>
 
 
+<div className='pb-4 pl-4'>
+  <div className='py-4'>
+    <label className=' font-semibold'>Confirm Password:</label>
+  </div>
+
+<input type='password' className=' border-2  border-slate-300 rounded-lg w-64 h-12 ' {...register('password')}></input><br></br>
+{errors.password && <div className='text-black text-sm'>{errors.password.message}</div>}
+</div>
+
+
 <div className='flex justify-center'>  <input type ='submit' value='LOGIN' className=' relative border-2 bg-blue-200 border-blue-400 rounded-md w-20 h-8 m-2 cursor-pointer' ></input></div>
 </form>
 
