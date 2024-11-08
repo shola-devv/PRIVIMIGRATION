@@ -10,15 +10,15 @@ import Link from 'next/link.js'
 return (
 
 <div className="p-6 relative font-mono">
-    <div id='header' className='flex  shadow-blue-300 shadow-md ml-16 rounded-md'>
+    <div id='header' className='flex  shadow-blue-300 shadow-md ml-4 rounded-md'>
    <div className='pl-4 py-2  text-bold lg:text-xl text-blue-400' >{name}</div>
    <div id='buttons' className=' flex '>
-   <div className='relative'><Link href='/Signup'> <button className=' relative border-4 sm:border-2 bg-blue-200 border-blue-400 rounded-lg w-20 h-8 ml-32 lg:ml-50rem' >Sign-up</button></Link></div> 
-   <div className='relative'><Link href='/Login'> <button className='border-4 sm:border-2 bg-lime-200 border-lime-500 rounded-lg w-20 h-8  ml-4 mr-2 text-white text-bold ' >Log-in</button></Link></div> 
+   <div className='relative'><Link href='/Signup'> <button className=' relative border-2 sm:border-2 bg-blue-200 border-blue-400 rounded-lg w-20 h-8 ml-32 lg:ml-50rem' >Sign-up</button></Link></div> 
+   <div className='relative'><Link href='/Login'> <button className='border-2 sm:border-2 bg-lime-200 border-lime-500 rounded-lg w-20 h-8  ml-4 mr-2 text-black text-bold ' >Log-in</button></Link></div> 
    </div>
     </div>  
 
-<div className='ml-24'>
+<div className='ml-10'>
 
 <div className='relative pt-20 lg:pt-20 lg:-mb-third'>
 <img

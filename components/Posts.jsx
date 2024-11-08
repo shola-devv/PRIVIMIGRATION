@@ -11,12 +11,12 @@ import {faListDots as faListDotsThin } from '@fortawesome/free-solid-svg-icons'
 const Posts = () => {
 
     const [messages, setMessages] = useState([
-        {src:'aircraft.svg', text: 'Welcome to journals to me, hope you have a nice time here', time:'9:40', scheduled:' scheduled-send =8:44', sender:'them'},
-        {src:'aircraft.svg', text: 'Hellddddddddddddddddo', time:'9:40', scheduled:'scheduled-send = 8:44', sender:'you'},
-        {src:'aircraft.svg', text: 'Hello baby mi', time:'9:40', scheduled:'scheduled-send = 8:44', sender:'her'},
-        {src:'aircraft.svg', text: 'Hey there', time:'9:40', scheduled:'8:44', sender:'you'},
-        {src:'aircraft.svg', text: 'Hey there', time:'9:40', scheduled:'8:44', sender:'you'},
-        {src:'aircraft.svg', text: 'Hey there', time:'9:40', scheduled:'8:44', sender:'you'},
+        {src:'aircraft.svg', text: 'Just created an account, hows everyone here doing?', time:'9:40', scheduled:' scheduled-send =8:44', sender:'them'},
+        {src:'aircraft.svg', text: 'im planning a vacation, toughts on aa location?', time:'9:40', scheduled:'scheduled-send = 8:44', sender:'you'},
+        {src:'aircraft.svg', text: 'Australia is the perfect place to be right now', time:'9:40', scheduled:'scheduled-send = 8:44', sender:'her'},
+        {src:'aircraft.svg', text: 'My trip to bali was awesome, anyone else been there', time:'9:40', scheduled:'8:44', sender:'you'},
+        {src:'aircraft.svg', text: 'Hey there?', time:'9:40', scheduled:'8:44', sender:'you'},
+        {src:'aircraft.svg', text: 'up Canada!!', time:'9:40', scheduled:'8:44', sender:'you'},
     ]);
 
     return (
@@ -45,7 +45,7 @@ const Posts = () => {
     </div>
     </div>
     
-    <p className> vote republican, make America great again</p>
+    <p className>{message.text}</p>
     <div className='flex justify-between items-center'>
         
     <div className='flex items center'>

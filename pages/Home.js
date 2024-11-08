@@ -82,7 +82,7 @@ return(
     
     </div>
     
-  <div className= 'flex-1 overflow-y-auto py-10 mt-16 border-4 bg-grey-200 w-full p-4 mx-6 rounded-lg'> 
+  <div className= 'flex-1 overflow-y-auto  mt-10 border-4 bg-grey-200 w-full  mx-6 rounded-lg'> 
   
      <Posts/>
   </div>
@@ -92,11 +92,11 @@ return(
     
   <div className='fixed bottom-0 left-0 w-full mb-20 bg-white  flex justify-around '>
    
-  <div className="w-16 h-16 bg-slate-100  rounded-full cursor-pointer"><FontAwesomeIcon icon={faPaperPlaneThin} className="w-16 h-10  text-blue-500" /></div>
+  <div className="w-16 h-10 bg-slate-100  rounded-full cursor-pointer"><FontAwesomeIcon icon={faPaperPlaneThin} className="w-8 h-8  text-blue-500" /></div>
   </div>
-    <div className="w-12 h-12  bg-grey-200 cursor-pointer"><FontAwesomeIcon icon={faHomeThin} className="w-16 h-10 text-lime-500" /></div>
-    <div className="w-12 h-12 bg-grey-200 cursor-pointer"><FontAwesomeIcon icon={faSearchThin} className="w-16 h-10  text-lime-500" /></div>
-    <div className="w-12 h-12 bg-grey-200 cursor-pointer"><FontAwesomeIcon icon={faBellThin} className="w-16 h-10  text-lime-500" /></div>
+    <div className="w-12 h-12  bg-grey-200 cursor-pointer"><FontAwesomeIcon icon={faHomeThin} className="w-8 h-8 text-lime-500" /></div>
+    <div className="w-12 h-12 bg-grey-200 cursor-pointer"><FontAwesomeIcon icon={faSearchThin} className="w-8 h-8  text-lime-500" /></div>
+    <div className="w-12 h-12 bg-grey-200 cursor-pointer"><FontAwesomeIcon icon={faBellThin} className="w-8 h-8  text-lime-500" /></div>
     
     
      </div>
