@@ -1,5 +1,3 @@
-//import Slide from "@/components/Slider"
-//< Slide/>
 import axios from 'axios'
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -13,6 +11,7 @@ import { faBell as faBellThin } from '@fortawesome/free-solid-svg-icons'
 import { faSearch as faSearchThin } from '@fortawesome/free-solid-svg-icons'
 import { faPaperPlane as faPaperPlaneThin } from '@fortawesome/free-solid-svg-icons'
 import Posts from "@/components/Posts"
+import Slide from "@/components/Bar"
 
 
 /*
@@ -79,7 +78,7 @@ return(
 
 
     <div className='fixed top-0 left-0 w-full'>
-    
+    < Slide/>
     </div>
     
   <div className= 'flex-1 overflow-y-auto  mt-10 border-4 bg-grey-200 w-full  mx-6 rounded-lg'> 
