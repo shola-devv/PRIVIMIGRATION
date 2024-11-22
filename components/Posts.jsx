@@ -49,7 +49,7 @@ const Posts = () => {
     <div className='flex justify-between items-center'>
         
     <div className='flex items center'>
-        
+        git
     <span className='mr-2 text-gray-500'> <div> <FontAwesomeIcon icon={faCommentThin} /></div></span> 
     <span className='text-gray-500'>12  </span>   
      </div>

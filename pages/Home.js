@@ -12,7 +12,7 @@ import { faSearch as faSearchThin } from '@fortawesome/free-solid-svg-icons'
 import { faPaperPlane as faPaperPlaneThin } from '@fortawesome/free-solid-svg-icons'
 import Posts from "@/components/Posts"
 import Slide from "@/components/Bar"
-
+import Link from 'next/link';
 
 /*
 
@@ -91,11 +91,11 @@ return(
     
   <div className='fixed bottom-0 left-0 w-full mb-20 bg-white  flex justify-around '>
    
-  <div className="w-16 h-10 bg-slate-100  rounded-full cursor-pointer"><FontAwesomeIcon icon={faPaperPlaneThin} className="w-8 h-8  text-blue-500" /></div>
+  <Link href='/Post'><div className="w-16 h-10 bg-slate-100  rounded-full cursor-pointer"><FontAwesomeIcon icon={faPaperPlaneThin} className="w-8 h-8  text-blue-500" /></div></Link>
   </div>
     <div className="w-12 h-12  bg-grey-200 cursor-pointer"><FontAwesomeIcon icon={faHomeThin} className="w-8 h-8 text-lime-500" /></div>
-    <div className="w-12 h-12 bg-grey-200 cursor-pointer"><FontAwesomeIcon icon={faSearchThin} className="w-8 h-8  text-lime-500" /></div>
-    <div className="w-12 h-12 bg-grey-200 cursor-pointer"><FontAwesomeIcon icon={faBellThin} className="w-8 h-8  text-lime-500" /></div>
+    <Link href='/Search'><div className="w-12 h-12 bg-grey-200 cursor-pointer"><FontAwesomeIcon icon={faSearchThin} className="w-8 h-8  text-lime-500" /></div></Link>
+    <Link href='/Notifications'><div className="w-12 h-12 bg-grey-200 cursor-pointer"><FontAwesomeIcon icon={faBellThin} className="w-8 h-8  text-lime-500" /></div></Link>
     
     
      </div>

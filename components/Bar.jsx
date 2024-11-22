@@ -42,9 +42,9 @@ const Slide = ()=>{
 
     > 
       <ul>
-      <Link href='/profile'> <li className='pt-20 cursor-pointer'>Profile <FontAwesomeIcon className='text-white' icon={faUserThin} /></li></Link>
-      <Link href='/settings'><li className='py-2 '>Settings <FontAwesomeIcon className='text-white' icon={faGearThin} /></li> </Link>
-      <Link href='/about'><li className='py-2 cursor-pointer'>About <FontAwesomeIcon className='text-white' icon={faYinYangThin} /></li> </Link>
+      <Link href='/Profile'> <li className='pt-20 cursor-pointer'>Profile <FontAwesomeIcon className='text-white' icon={faUserThin} /></li></Link>
+      <Link href='/Settings'><li className='py-2 '>Settings <FontAwesomeIcon className='text-white' icon={faGearThin} /></li> </Link>
+      <Link href='/About'><li className='py-2 cursor-pointer'>About <FontAwesomeIcon className='text-white' icon={faYinYangThin} /></li> </Link>
        <Link href='/Themes'><li className='py-2 cursor-pointer'>Theme <FontAwesomeIcon className='text-white' icon={faPaletteThin} /></li> </Link>
       </ul>
 

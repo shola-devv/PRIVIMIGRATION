@@ -10,7 +10,8 @@ import * as yup from 'yup';
   const schema = yup.object().shape({
     username: yup.string().required('username is required'),
     email:yup.string().email('invalid email').required('Email is required'),
-    password: yup.string().required('password is required')
+    password: yup.string().required('password is required'),
+    confirmPassword: yup.string().required('confirmPassword is required').oneOf([yup.ref('password'), 'passwords must match'])
 })
 
 
